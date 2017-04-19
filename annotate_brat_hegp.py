@@ -14,7 +14,7 @@ if len(sys.argv) < 2:
     exit(1)
 
 
-client = c.Client("http://vm:8081/annotator/", "61297daf-147c-40f3-b9b1-a3a2d6b744fa")
+client = c.Client("http://localhost:8081/annotator/", "61297daf-147c-40f3-b9b1-a3a2d6b744fa")
 
 inputFile = sys.argv[1]
 output_file_name = os.path.basename(inputFile).split(".")[0] + ".ann"
