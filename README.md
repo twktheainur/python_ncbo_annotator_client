@@ -43,7 +43,7 @@ output_file_handler = open(output_directory + os.path.sep + output_file_name, "w
 
 text = input_file_handler.read()
 
-query = aq.AnnotatorQuery(text=text, format="brat", negation=True, experiencer=True, temporality=True)
+query = aq.AnnotatorQuery(text=text, format="brat", negation=True, experiencer=True, temporality=True, semantic_groups=["DISO"])
 result = client.run_query(query)
 
 output_file_handler.write(result)
